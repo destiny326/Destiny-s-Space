@@ -40,15 +40,5 @@ body > * {
     .aside {flex: 1 0;}
 }
 
-<div class="image-container">
-  <img src="Logo-CSS3.jpg" alt="css-logo">
-</div>
 
-.image-container {
-  border: 2px solid black;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
 
