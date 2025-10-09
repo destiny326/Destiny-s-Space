@@ -1,13 +1,22 @@
 body{
+    display: flex;
+    flex-flow: row wrap;
     font-family: Lato, sans-serif;
+    font-weight: bold;
+    text-align: center;
     background: url('images/plan-page.jpg');
-    text-size-adjust: 16px;
+    font-size: 16px;
     width: 1180px;
+    padding: 30px;
+}
+
+body >* {
+    padding: 10px;
+    flex: 1 100%;
 }
 
 Section {
     container: center;
-    text-align: center;
 }
     
   
@@ -20,11 +29,11 @@ article {
 }
 
 article > h1 {
-    text-size-adjust: 1.5em;
+    font-size: 1.5em;
     color: #fff;
 }
 
-p.price {
+.price {
     font-size: 3em;
     font-weight: bold;
     color: #27dcc4;
@@ -41,6 +50,7 @@ button {
     margin: 10px 0;
     font-size: 0.9em;
     cursor: pointer;
+    border-radius: 5px;
     border: none;
 }
 
@@ -50,5 +60,38 @@ button:hover{
 
 li {
     list-style-type: none;
-    padding: 5px 0;
+    padding: 10px 0;
+}
+
+.header{
+    background: tomato;
+}
+
+.main-article {
+    text-align: left;
+    background: deepskyblue;
+}
+
+.aside-1 {
+    background: gold;
+}
+
+.aside-2{
+    background: hotpink;
+}
+
+.footer {
+    background: lightgreen;
+}
+
+@media all and (min-width: 800px) {
+     .main-article { flex: 3 0; }
+  .aside-1 { order: 1; }
+  .main-article { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+@media all and (min-width: 600px) {
+  .aside {flex: 1 0;}
 }
