@@ -26,11 +26,12 @@ nav#topmenu a:hover{
     color: aqua;
 }
 
-body {
-    background: #ecdbf0;
+body{
     color: black;
 }
-
+.main{
+     background: #ecdbf0;
+}
 .image-container{
     display: flex;
     align-items: center;
@@ -43,4 +44,8 @@ body {
     object-fit: cover;
     border-radius: 6px;
     flex-shrink: 0;
+}
+
+ body#back {
+    background-image: url(Gemini_Generated_Image_ym9yxlym9yxlym9y.png);
 }
